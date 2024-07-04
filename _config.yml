@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ""
+title: Goneblog
+subtitle: 개발블로그
 description: ""
 keywords:
-author: John Doe
+author: G1
 language: en
-timezone: ""
+timezone: Asia/Seoul
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://g1923.github.io/ # http://example.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -101,4 +101,6 @@ theme: redefine
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ""
+  type: git
+  branch: main
+  repo: https://github.com/g1923/g1923.github.io.git

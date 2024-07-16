@@ -769,7 +769,7 @@ body {
   font-family: Geist Variable, Noto Sans SC, -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
@@ -780,14 +780,14 @@ body::-webkit-scrollbar {
   html,
   body {
     font-size: 15.36px;
-    line-height: 1.44;
+    line-height: 1.344;
   }
 }
 @media (max-width: 640px) {
   html,
   body {
     font-size: 14.4px;
-    line-height: 1.35;
+    line-height: 1.26;
   }
 }
 ::selection {
@@ -907,7 +907,7 @@ button {
 }
 .markdown-body {
   font-family: 'Geist Variable', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
 }
 .markdown-body blockquote {
   box-sizing: border-box;
@@ -925,7 +925,7 @@ button {
   padding: 5px 5px 5px 10px;
 }
 .markdown-body p {
-  line-height: 1.5;
+  line-height: 1.4;
   color: var(--default-text-color);
   font-weight: 400;
   margin-bottom: 1rem;
@@ -1018,7 +1018,7 @@ button {
 .markdown-body .h6 {
   font-family: 'Geist Variable', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif, sans-serif;
   color: var(--second-text-color);
-  line-height: 1.5;
+  line-height: 1.4;
 }
 @media (max-width: 768px) {
   .markdown-body h1,
@@ -1033,12 +1033,12 @@ button {
   .markdown-body .h4,
   .markdown-body .h5,
   .markdown-body .h6 {
-    line-height: 1.44;
+    line-height: 1.344;
   }
 }
 .markdown-body h1,
 .markdown-body .h1 {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   font-weight: 650;
   border-bottom: solid 2px var(--fourth-text-color);
   margin-top: 3.2rem;
@@ -1055,7 +1055,7 @@ button {
 }
 .markdown-body h2,
 .markdown-body .h2 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 650;
   padding: 3px 0;
   border-bottom: solid 2px var(--fourth-text-color);
@@ -1073,7 +1073,7 @@ button {
 }
 .markdown-body h3,
 .markdown-body .h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
   margin-top: 1.9rem;
   margin-bottom: 0.75rem;
@@ -1089,7 +1089,7 @@ button {
 }
 .markdown-body h4,
 .markdown-body .h4 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
   margin-top: 1.6rem;
   margin-bottom: 0.75rem;
@@ -10211,9 +10211,9 @@ details[open] > summary i.fa-chevron-right {
 summary {
   border: solid 1px var(--shadow-color-1);
   border-radius: 9px;
-  padding: 15px;
-  font-size: 1.2rem;
-  background-color: var(--background-color);
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  background-color: var(--second-background-color);
   line-height: 2rem;
   cursor: pointer;
 }
@@ -10223,9 +10223,8 @@ summary:marker {
 summary i.fa-chevron-right {
   transform: rotate(0deg);
   transition: transform 0.2s ease;
-  margin-right: 1rem;
   float: right;
-  padding-top: 6px;
+  padding-top: 8px;
 }
 summary:hover {
   background-color: rgba(166,166,166,0.188);
@@ -10240,11 +10239,13 @@ details div.content {
   border: solid 1px var(--shadow-color-1);
   padding: 1rem;
   margin-bottom: 1rem;
-  background-color: var(--second-background-color);
   animation: fade 0.2s ease forwards;
 }
 details div.content>:first-child {
   margin-top: 0;
+}
+details.yellow summary {
+  background-color: rgba(255,238,48,0.188);
 }
 details.yellow summary:hover {
   background-color: rgba(255,238,48,0.188);
@@ -10252,11 +10253,17 @@ details.yellow summary:hover {
 details.yellow[open] > summary {
   background-color: rgba(255,238,48,0.188);
 }
+details.blue summary {
+  background-color: rgba(0,166,255,0.188);
+}
 details.blue summary:hover {
   background-color: rgba(0,166,255,0.188);
 }
 details.blue[open] > summary {
   background-color: rgba(0,166,255,0.188);
+}
+details.green summary {
+  background-color: rgba(0,255,166,0.188);
 }
 details.green summary:hover {
   background-color: rgba(0,255,166,0.188);
@@ -10264,11 +10271,17 @@ details.green summary:hover {
 details.green[open] > summary {
   background-color: rgba(0,255,166,0.188);
 }
+details.red summary {
+  background-color: rgba(255,0,0,0.188);
+}
 details.red summary:hover {
   background-color: rgba(255,0,0,0.188);
 }
 details.red[open] > summary {
   background-color: rgba(255,0,0,0.188);
+}
+details.orange summary {
+  background-color: rgba(255,152,48,0.188);
 }
 details.orange summary:hover {
   background-color: rgba(255,152,48,0.188);
@@ -10276,11 +10289,17 @@ details.orange summary:hover {
 details.orange[open] > summary {
   background-color: rgba(255,152,48,0.188);
 }
+details.pink summary {
+  background-color: rgba(255,0,255,0.188);
+}
 details.pink summary:hover {
   background-color: rgba(255,0,255,0.188);
 }
 details.pink[open] > summary {
   background-color: rgba(255,0,255,0.188);
+}
+details.cyan summary {
+  background-color: rgba(0,255,255,0.188);
 }
 details.cyan summary:hover {
   background-color: rgba(0,255,255,0.188);
@@ -10306,6 +10325,9 @@ details.gray summary:hover {
 details.gray[open] > summary {
   background-color: rgba(166,166,166,0.188);
 }
+details.purple summary {
+  background-color: rgba(167,99,255,0.188);
+}
 details.purple summary:hover {
   background-color: rgba(167,99,255,0.188);
 }
@@ -10317,6 +10339,40 @@ details summary:hover {
 }
 details[open] > summary {
   background-color: rgba(166,166,166,0.188);
+}
+details table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+  overflow: auto;
+  margin-bottom: 1.2rem;
+  box-shadow: var(--redefine-box-shadow-flat);
+  border-radius: 14px;
+}
+details table td {
+  padding: 8px 16px;
+  border-left: 1px solid var(--shadow-color-1);
+}
+details table th {
+  padding: 8px 16px;
+  border-left: 1px solid var(--shadow-color-1);
+  border-top: 0;
+  border-bottom: 1px solid var(--shadow-color-1);
+  background-color: var(--third-background-color) !important;
+}
+details table td:first-child {
+  border-left: 0px;
+}
+details table td:last-child {
+  border-right: 0px;
+}
+details table th:first-child {
+  border-top-left-radius: 14px;
+  border-left: 0px;
+}
+details table th:last-child {
+  border-top-right-radius: 14px;
+  border-right: 0px;
 }
 @-moz-keyframes fade {
   from {
